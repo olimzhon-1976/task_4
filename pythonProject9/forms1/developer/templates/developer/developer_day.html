@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>День программиста</title>
+</head>
+<body>
+    <h1>Проверить День программиста</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Проверить</button>
+    </form>
+    {% if result %}
+        <p>День программиста в указанном году: {{ result }}</p>
+    {% endif %}
+
+    <h3> <a href="{% url 'index' %}">Главная</a></h3><br>
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добро пожаловать</title>
+</head>
+<body>
+    <h1>Добро пожаловать!</h1>
+    <p>Ваш уровень доступа: {{ level }}</p>
+
+    <p>'Администратор' # login:admin1, password:1234</p>
+    <p>'Пользователь' # login:User1, password:password1user1</p><br>
+
+    <h3> <a href="{% url 'login' %}">Задания №1</a></h3><br>
+    <h3><a href="{% url 'calculate' %}">Задания №2</a></h3><br>
+    <h3><a href="{% url 'register' %}">Задания №3</a></h3><br>
+    <h3><a href="{% url 'developer_day' %}">Задания №4</a></h3><br>
+
+</body>
+</html>
